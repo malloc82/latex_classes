@@ -14,8 +14,7 @@ vmargin=1in
 % use vmargin=2cm to make vertical margins equal to 2cm.
 % us  hmargin=3cm to make horizontal margins equal to 3cm.
 % use margin=3cm to make all margins  equal to 3cm.
-]
-{geometry}
+]{geometry}
 \usepackage{graphicx} % new way of doing eps files
 \usepackage{listings} % nice code layout
 \usepackage{amsmath}
@@ -26,6 +25,7 @@ vmargin=1in
 \usepackage{amssymb}    % for \mathbb
 \usepackage{mathrsfs}   % for fonts \mathcal{}, \mathscr{}, etc
 \usepackage[makeroom]{cancel} % used for generate "cross out" effect
+\usepackage{hyperref}
 
 \newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
 \newcommand{\eqnote}[1]{\mbox{\hspace{10pt}#1\hspace{10pt}}}
