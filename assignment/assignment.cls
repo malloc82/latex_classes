@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e} 
-\ProvidesClass{notes}[2013/09/27 Notes Class] 
+\ProvidesClass{assignment}[2014/01/28 Assignment Class] 
 % \LoadClass{scrreprt}
 % \LoadClass{report}
 % \LoadClass{scrartcl}
-% \LoadClass{article}
-\LoadClass{book}
+\LoadClass{article}
+
 \usepackage
 [
 % a4paper,% other options: a3paper, a5paper, etc
@@ -22,13 +22,14 @@ vmargin=1in
 \usepackage{titling}
 \makeatletter
 
-\usepackage[pagestyles]{titlesec}
-\usepackage{lipsum}
-
-\newpagestyle{mystyle}{%
-  \headrule\sethead{\chaptername\ \thechapter. \chaptertitle}{}{\@author}
-  \setfoot{}{\thepage}{}}
-\pagestyle{mystyle}
+\usepackage{fancyhdr}
+\pagestyle{fancy} % enable fancy page style
+\renewcommand{\headrulewidth}{0.2pt} % comment if you want the rule 
+\fancyhf{} % clear header and footer
+\fancyhead[L]{\@title} % section title on the left
+\fancyhead[R]{\@author}   % page number
+% \fancyhead[C]{Header}
+\fancyfoot[C]{\thepage}
 
 \usepackage{graphicx} % new way of doing eps files
 \usepackage{listings} % nice code layout
@@ -128,6 +129,8 @@ vmargin=1in
   \lstset{frame=tb}
   \lstinputlisting[caption={#1},label={#2}]{#3}
 }
+
+\definecolor{orange}{rgb}{1,0.5,0}%Lowercase breaks on \documentclass[jou]{apa}!
 
 % source: http://stackoverflow.com/questions/741985/latex-source-code-listing-like-in-professional-books
 % \SourceCode{language}{caption}{label}{file_path}
