@@ -68,6 +68,7 @@ vmargin=1in
 \newcommand{\df}{\dfrac}
 \newcommand{\f}{\frac}
 \newcommand{\ol}{\overline}
+\newcommand{\OP}{\operatorname}
 
 %% ==========================================
 %% Indentation: 

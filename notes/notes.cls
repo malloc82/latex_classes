@@ -59,7 +59,6 @@ vmargin=1in
 \newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor}
 \newcommand{\ceil}[1]{\left \lceil #1 \right \rceil}
 \newcommand{\abs}[1]{\left| #1 \right|}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Shortcuts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -67,6 +66,7 @@ vmargin=1in
 \newcommand{\df}{\dfrac}
 \newcommand{\f}{\frac}
 \newcommand{\ol}{\overline}
+\newcommand{\OP}{\operatorname}
 
 %% ==========================================
 %% Indentation: 
