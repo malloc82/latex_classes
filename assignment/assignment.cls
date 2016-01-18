@@ -238,6 +238,8 @@ with-meta,with-open,with-out-str,with-precision,xml-seq,zero?,zipmap
   % #2 = caption
   % #3 = label
   % #4 = path
+  % #5 = firstline
+  % #6 = lastline
   \lstset{language=#1}
   \lstset{
     commentstyle=\color{orange}\textit,
