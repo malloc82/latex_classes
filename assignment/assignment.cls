@@ -44,7 +44,14 @@ vmargin=1in
 \usepackage{hyperref}
 % \usepackage{hypcap}
 \usepackage{enumerate} % enumerate with different letter style
+\usepackage{enumitem}  % \begin{enumerate}[label=\textbf{\alph*}]
+\usepackage{cases} % numcases and subnumcases
 
+\usepackage{pifont}  % checkmark commands: \checkmark
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage{accents} % fix buggy \dddot{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Custom Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,6 +77,7 @@ vmargin=1in
 \newcommand{\ol}{\overline}
 \newcommand{\OP}{\operatorname}
 \newcommand\eqtext[1]{\stackrel{\mathllap{\normalfont\tiny\mbox{#1}}}{=}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
 %% ==========================================
 %% Indentation:
