@@ -47,6 +47,9 @@ vmargin=1in
 \usepackage{enumitem}  % \begin{enumerate}[label=\textbf{\alph*}]
 \usepackage{cases} % numcases and subnumcases
 
+\usepackage{blindtext}
+\usepackage{scrextend} % for labeling command
+
 \usepackage{pifont}  % checkmark commands: \checkmark
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
