@@ -42,6 +42,12 @@ vmargin=1in
 \usepackage{mathrsfs}   % for fonts \mathcal{}, \mathscr{}, etc
 \usepackage[makeroom]{cancel} % used for generate "cross out" effect
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
 % \usepackage{hypcap}
 \usepackage{enumerate} % enumerate with different letter style
 \usepackage{enumitem}  % \begin{enumerate}[label=\textbf{\alph*}]
