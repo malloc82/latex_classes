@@ -148,6 +148,14 @@ vmargin=1in
   \lstset{frame=tb}
   \lstinputlisting[caption={#1},label={#2}]{#3}
 }
+\newcommand{\Bash}[1]{
+  \lstset{language=bash}
+  \lstset{backgroundcolor=\color{listinggray},rulecolor=\color{blue}}
+  \lstset{linewidth=\textwidth}
+  \lstset{commentstyle=\textit, stringstyle=\upshape,showspaces=false}
+  \lstset{frame=tb}
+  #1
+}
 
 \definecolor{orange}{rgb}{1,0.5,0}%Lowercase breaks on \documentclass[jou]{apa}!
 
