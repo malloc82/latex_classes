@@ -76,7 +76,7 @@ vmargin=1in
 \newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor}
 \newcommand{\ceil}[1]{\left \lceil #1 \right \rceil}
 \newcommand{\abs}[1]{\left| #1 \right|}
-
+\newcommand{\QED}{\hfill\blacksquare}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Shortcuts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,6 +155,14 @@ vmargin=1in
   \lstset{commentstyle=\textit, stringstyle=\upshape,showspaces=false}
   \lstset{frame=tb}
   #1
+}
+\newcommand{\BashLang}[3]{
+  \lstset{language=bash}
+  \lstset{backgroundcolor=\color{listinggray},rulecolor=\color{blue}}
+  \lstset{linewidth=\textwidth}
+  \lstset{commentstyle=\textit, stringstyle=\upshape,showspaces=false}
+  \lstset{frame=tb}
+  \lstinputlisting[caption={#1},label={#2}]{#3}
 }
 
 \definecolor{orange}{rgb}{1,0.5,0}%Lowercase breaks on \documentclass[jou]{apa}!
@@ -295,4 +303,3 @@ with-meta,with-open,with-out-str,with-precision,xml-seq,zero?,zipmap
   }
   \lstinputlisting[caption={#2},label={#3}, firstline={#5}, lastline={#6}]{#4}
 }
-
